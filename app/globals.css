@@ -1,26 +1,163 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@layer base {
+  :root {
+    /* zinc-50 */
+    --background: 0 0% 98.5%;
+    /* zinc-950 */
+    --foreground: 0 0% 14.1%;
+    
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 14.1%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 14.1%;
+    
+    /* zinc-950 */
+    --primary: 0 0% 14.1%;
+    /* zinc-50 */
+    --primary-foreground: 0 0% 98.5%;
+    
+    /* zinc-100 */
+    --secondary: 0 0% 96.7%;
+    /* zinc-950 */
+    --secondary-foreground: 0 0% 14.1%;
+    
+    /* zinc-100 */
+    --muted: 0 0% 96.7%;
+    /* zinc-500 */
+    --muted-foreground: 0 0% 55.2%;
+    
+    --accent: 0 0% 96.7%;
+    --accent-foreground: 0 0% 14.1%;
+    
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    
+    /* zinc-200 */
+    --border: 0 0% 89.8%;
+    --input: 0 0% 89.8%;
+    --ring: 0 0% 14.1%;
+    --radius: 0.5rem;
+    
+    /* zinc-200 */
+    --edge: 0 0% 89.8%;
+  }
+
+  .dark {
+    /* zinc-950 */
+    --background: 0 0% 14.1%;
+    /* zinc-50 */
+    --foreground: 0 0% 98.5%;
+    
+    --card: 0 0% 14.1%;
+    --card-foreground: 0 0% 98.5%;
+    --popover: 0 0% 14.1%;
+    --popover-foreground: 0 0% 98.5%;
+    
+    /* zinc-700 */
+    --primary: 0 0% 37%;
+    /* zinc-50 */
+    --primary-foreground: 0 0% 98.5%;
+    
+    /* zinc-800 */
+    --secondary: 0 0% 27.4%;
+    /* zinc-50 */
+    --secondary-foreground: 0 0% 98.5%;
+    
+    /* zinc-800 */
+    --muted: 0 0% 27.4%;
+    /* zinc-400 */
+    --muted-foreground: 0 0% 70.5%;
+    
+    --accent: 0 0% 27.4%;
+    --accent-foreground: 0 0% 98.5%;
+    
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    
+    /* zinc-800 */
+    --border: 0 0% 27.4%;
+    --input: 0 0% 27.4%;
+    --ring: 0 0% 83.1%;
+    
+    /* zinc-800 */
+    --edge: 0 0% 27.4%;
+  }
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+  --color-background: hsl(var(--background));
+  --color-foreground: hsl(var(--foreground));
+  --color-card: hsl(var(--card));
+  --color-card-foreground: hsl(var(--card-foreground));
+  --color-popover: hsl(var(--popover));
+  --color-popover-foreground: hsl(var(--popover-foreground));
+  --color-primary: hsl(var(--primary));
+  --color-primary-foreground: hsl(var(--primary-foreground));
+  --color-secondary: hsl(var(--secondary));
+  --color-secondary-foreground: hsl(var(--secondary-foreground));
+  --color-muted: hsl(var(--muted));
+  --color-muted-foreground: hsl(var(--muted-foreground));
+  --color-accent: hsl(var(--accent));
+  --color-accent-foreground: hsl(var(--accent-foreground));
+  --color-destructive: hsl(var(--destructive));
+  --color-destructive-foreground: hsl(var(--destructive-foreground));
+  --color-border: hsl(var(--border));
+  --color-input: hsl(var(--input));
+  --color-ring: hsl(var(--ring));
+  --color-edge: hsl(var(--edge));
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-sans), system-ui, -apple-system, sans-serif;
+    font-feature-settings: "rlig" 1, "calt" 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  /* Smooth transitions for all interactive elements */
+  a, button, [role="button"] {
+    @apply transition-colors duration-200 ease-in-out;
+  }
+  
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: hsl(var(--background));
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: hsl(var(--border));
+    border-radius: 5px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: hsl(var(--muted-foreground));
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer utilities {
+  .screen-line-after {
+    @apply relative after:absolute after:-bottom-px after:left-0 after:h-px after:w-full after:bg-border;
+  }
+  
+  .screen-line-before {
+    @apply relative before:absolute before:-top-px before:left-0 before:h-px before:w-full before:bg-border;
+  }
 }
