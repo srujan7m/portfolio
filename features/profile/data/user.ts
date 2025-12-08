@@ -1,14 +1,16 @@
 export const USER = {
   username: "Srujan Mattur",
   displayName: "Srujan Mattur",
-  bio: "Full stack web developer",
-  about: `Your detailed about section. You can write multiple paragraphs here about your background, experience, and interests.`,
+  bio: "Exploring the new world",
+  about: `Full-stack web developer with expertise in modern web technologies. Passionate about building scalable applications and exploring new technologies. Currently working on various projects involving React, Next.js, TypeScript, and Node.js.
+
+Active contributor to open-source projects and constantly learning new skills in web development, AI integration, and cloud technologies.`,
   
   // Contact info
   email: "srujanmmattur@gmail.com",
   phone: "+91 6361127317",
-  location: "Hubli, India",
-  website: "yourwebsite.com",
+  location: "Karnataka, India",
+  website: "https://github.com/srujan7m",
   
   // Profile images
   avatar: "/images/avatar.svg",
@@ -16,11 +18,11 @@ export const USER = {
   
   // Personal details
   gender: "he/him", // or "she/her" or "they/them"
-  dateCreated: "2024-01-01",
+  dateCreated: "2024-08-05",
   
   // Professional
-  currentRole: "Your Current Role",
-  currentCompany: "Your Company",
+  currentRole: "Full Stack Developer",
+  currentCompany: "Independent",
   
   keywords: [
     "Full Stack Developer",

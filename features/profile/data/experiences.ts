@@ -18,36 +18,41 @@ export type Position = {
 
 export const EXPERIENCES: Experience[] = [
   {
-    id: "company-1",
-    company: "Your Current Company",
+    id: "independent-dev",
+    company: "Independent Developer",
     current: true,
     positions: [
       {
-        title: "Senior Developer",
-        type: "Full-time",
+        title: "Full Stack Developer",
+        type: "Self-employed",
         period: {
-          start: "01.2023",
+          start: "08.2024",
         },
-        description: `• Led development of key features
-• Collaborated with design team
-• Mentored junior developers
-• Implemented best practices`,
+        description: `• Developed full-stack web applications using modern technologies
+• Built event management platform with AI integration and payment processing
+• Created startup idea evaluation tool with multiple AI provider support
+• Implemented file management systems with cloud storage integration
+• Active contributor to open-source projects on GitHub`,
         skills: [
           "React",
           "Next.js",
           "TypeScript",
-          "Team Leadership",
+          "Node.js",
+          "MongoDB",
+          "PostgreSQL",
+          "Firebase",
+          "AI Integration",
         ],
       },
     ],
   },
   {
-    id: "company-2",
-    company: "Previous Company",
+    id: "projects",
+    company: "Personal Projects",
     positions: [
       {
-        title: "Frontend Developer",
-        type: "Full-time",
+        title: "Developer",
+        type: "Learning & Building",
         period: {
           start: "06.2021",
           end: "12.2022",

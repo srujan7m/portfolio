@@ -44,6 +44,30 @@ export const TECH_STACK: TechItem[] = [
     categories: ["Runtime"],
   },
   {
+    key: "mongodb",
+    title: "MongoDB",
+    href: "https://www.mongodb.com/",
+    categories: ["Database"],
+  },
+  {
+    key: "express",
+    title: "Express.js",
+    href: "https://expressjs.com/",
+    categories: ["Framework"],
+  },
+  {
+    key: "postgresql",
+    title: "PostgreSQL",
+    href: "https://www.postgresql.org/",
+    categories: ["Database"],
+  },
+  {
+    key: "prisma",
+    title: "Prisma",
+    href: "https://www.prisma.io/",
+    categories: ["ORM"],
+  },
+  {
     key: "git",
     title: "Git",
     href: "https://git-scm.com/",
