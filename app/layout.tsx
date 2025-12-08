@@ -4,6 +4,8 @@ import "./globals.css";
 import { Providers } from "@/components/providers";
 import { SITE_INFO, META_THEME_COLORS } from "@/config/site";
 import { USER } from "@/features/profile/data/user";
+import { ScrollProgress, ScrollToTop } from "@/components/scroll-animations";
+import CursorFollower from "@/components/cursor-follower";
 
 const fontSans = IBM_Plex_Sans({
   weight: ["400", "500", "600"],
