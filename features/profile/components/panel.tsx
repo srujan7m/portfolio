@@ -34,7 +34,7 @@ const PanelTitle = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <h2
     ref={ref}
-    className={cn("text-xl font-semibold tracking-tight", className)}
+    className={cn("text-xl font-semibold tracking-tight gradient-text-subtle", className)}
     {...props}
   />
 ));
