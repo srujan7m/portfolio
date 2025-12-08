@@ -22,18 +22,20 @@ export function Overview() {
       <PanelContent>
         <div className="grid gap-3 text-sm">
           {USER.location && (
-            <div className="group flex items-center gap-3 text-muted-foreground transition-colors duration-200 hover:text-foreground">
-              <MapPinIcon className="h-4 w-4 transition-transform duration-200 group-hover:scale-110" />
-              <span className="font-medium">{USER.location}</span>
+            <div className="group relative flex items-center gap-3 rounded-md px-3 py-2 text-muted-foreground transition-all duration-300 hover:text-foreground hover:bg-muted/50">
+              <div className="absolute inset-0 rounded-md bg-blue-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              <MapPinIcon className="h-4 w-4 relative z-10 transition-all duration-300 group-hover:scale-110 group-hover:text-blue-500" />
+              <span className="font-medium relative z-10">{USER.location}</span>
             </div>
           )}
 
           {USER.phone && (
-            <div className="group flex items-center gap-3">
-              <PhoneIcon className="h-4 w-4 text-muted-foreground transition-transform duration-200 group-hover:scale-110" />
+            <div className="group relative flex items-center gap-3 rounded-md px-3 py-2">
+              <div className="absolute inset-0 rounded-md bg-green-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              <PhoneIcon className="h-4 w-4 text-muted-foreground relative z-10 transition-all duration-300 group-hover:scale-110 group-hover:text-green-500" />
               <a
                 href={`tel:${USER.phone}`}
-                className="font-medium text-muted-foreground hover:text-foreground transition-colors duration-200"
+                className="font-medium text-muted-foreground hover:text-foreground relative z-10 transition-colors duration-200"
               >
                 {USER.phone}
               </a>
@@ -41,11 +43,12 @@ export function Overview() {
           )}
 
           {USER.email && (
-            <div className="group flex items-center gap-3">
-              <MailIcon className="h-4 w-4 text-muted-foreground transition-transform duration-200 group-hover:scale-110" />
+            <div className="group relative flex items-center gap-3 rounded-md px-3 py-2">
+              <div className="absolute inset-0 rounded-md bg-purple-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              <MailIcon className="h-4 w-4 text-muted-foreground relative z-10 transition-all duration-300 group-hover:scale-110 group-hover:text-purple-500" />
               <a
                 href={`mailto:${USER.email}`}
-                className="font-medium text-muted-foreground hover:text-foreground transition-colors duration-200"
+                className="font-medium text-muted-foreground hover:text-foreground relative z-10 transition-colors duration-200"
               >
                 {USER.email}
               </a>
@@ -53,14 +56,15 @@ export function Overview() {
           )}
 
           {USER.website && (
-            <div className="group flex items-center gap-3 text-muted-foreground transition-colors duration-200 hover:text-foreground">
-              <GlobeIcon className="h-4 w-4 transition-transform duration-200 group-hover:scale-110" />
-              <span className="font-medium">{USER.website}</span>
+            <div className="group relative flex items-center gap-3 rounded-md px-3 py-2 text-muted-foreground transition-all duration-300 hover:text-foreground">
+              <div className="absolute inset-0 rounded-md bg-orange-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              <GlobeIcon className="h-4 w-4 relative z-10 transition-all duration-300 group-hover:scale-110 group-hover:text-orange-500" />
+              <span className="font-medium relative z-10">{USER.website}</span>
             </div>
           )}
 
           {USER.gender && (
-            <div className="text-muted-foreground font-medium">
+            <div className="text-muted-foreground font-medium px-3 py-2">
               {USER.gender}
             </div>
           )}
