@@ -11,7 +11,7 @@ export function Experiences() {
       <PanelContent>
         <FadeInStagger staggerDelay={0.15}>
           <div className="space-y-8">
-            {EXPERIENCES.map((experience, expIndex) => (
+            {EXPERIENCES.map((experience) => (
               <FadeInStaggerItem key={experience.id}>
                 <div 
                   className="group space-y-4 rounded-lg p-4 transition-all duration-300 hover:bg-linear-to-br hover:from-muted/50 hover:to-muted/30 hover:shadow-lg hover:shadow-blue-500/5"

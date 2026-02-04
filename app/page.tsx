@@ -3,12 +3,11 @@ import { SiteFooter } from "@/components/site-footer";
 import { Separator } from "@/components/page-separator";
 import { ProfileHeader } from "@/features/profile/components/profile-header";
 import { Overview } from "@/features/profile/components/overview";
-import { SocialLinks } from "@/features/profile/components/social-links";
 import { About } from "@/features/profile/components/about";
 import { TechStack } from "@/features/profile/components/tech-stack";
 import { Projects } from "@/features/profile/components/projects";
 import { Experiences } from "@/features/profile/components/experiences";
-import { FadeIn, FadeInStagger } from "@/components/fade-in";
+import { FadeIn } from "@/components/fade-in";
 
 export default function Home() {
   return (
@@ -21,10 +20,6 @@ export default function Home() {
           <Separator />
           <FadeIn delay={0.1}>
             <Overview />
-          </FadeIn>
-          <Separator />
-          <FadeIn delay={0.15}>
-            <SocialLinks />
           </FadeIn>
           <Separator />
           <FadeIn delay={0.2}>

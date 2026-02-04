@@ -12,12 +12,12 @@ export const SOCIAL_LINKS: SocialLink[] = [
   },
   {
     title: "LinkedIn",
-    href: "https://www.linkedin.com/in/srujan-mattur",
+    href: "https://www.linkedin.com/in/srujan-mattur-26ab8b315",
     icon: "linkedin",
   },
   {
     title: "Twitter",
-    href: "https://x.com/SrujanMattur7?t=XqIKVmGIHtPW7JMZ0DiFQA&s=09",
+    href: "https://x.com/SrujanMattur7",
     icon: "twitter",
   },
 ];

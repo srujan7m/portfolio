@@ -1,10 +1,15 @@
 export const USER = {
   username: "Srujan Mattur",
   displayName: "Srujan Mattur",
-  bio: "Exploring the new world",
-  about: `Full-stack web developer with expertise in modern web technologies. Passionate about building scalable applications and exploring new technologies. Currently working on various projects involving React, Next.js, TypeScript, and Node.js.
+  bio: "Next.js engineer crafting AI-first products",
+  about: `Full-stack developer focused on React/Next.js platforms with AI woven into the user experience. My north star is earning a product engineering role where I can ship fast, learn relentlessly, and keep solving real problems.
 
-Active contributor to open-source projects and constantly learning new skills in web development, AI integration, and cloud technologies.`,
+Recent highlights:
+• Owned the entire frontend + integrations for multiple hackathon wins (CampFlow, CitySense, ZentraAi) while teammates handled core AI models
+• Built production-ready systems that blend payments, mapping, realtime messaging, and AI copilots across civic, edtech, and collaboration tools
+• Treat every build like a product: story-driven case studies, clean UI polish, analytics hooks, and clear CTAs for recruiters or collaborators
+
+Current focus: multimodal AI UX, cost-optimized inference pipelines, and crafting memorable micro-interactions that make recruiters remember the portfolio.`,
   
   // Contact info
   email: "srujanmmattur@gmail.com",
@@ -21,15 +26,17 @@ Active contributor to open-source projects and constantly learning new skills in
   dateCreated: "2024-08-05",
   
   // Professional
-  currentRole: "Full Stack Developer",
+  currentRole: "Full-stack Developer (AI Integration)",
   currentCompany: "Independent",
   
   keywords: [
-    "Full Stack Developer",
-    "Frontend",
-    "React",
+    "Full-stack Developer",
+    "AI Integration",
     "Next.js",
     "TypeScript",
+    "React",
+    "Node.js",
+    "Gemini AI",
     "Web Development",
   ],
 };

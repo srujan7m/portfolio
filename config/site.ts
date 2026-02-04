@@ -1,8 +1,8 @@
 export const SITE_INFO = {
-  name: "Your Name",
+  name: "Srujan Mattur",
   url: process.env.APP_URL || "http://localhost:3000",
   description: "Your professional bio",
-  keywords: ["Portfolio", "Developer", "Your Name"],
+  keywords: ["Portfolio", "Developer", "Srujan Mattur"],
 };
 
 export const META_THEME_COLORS = {
@@ -26,6 +26,6 @@ export const MAIN_NAV: NavItem[] = [
   },
   {
     title: "Projects",
-    href: "#projects",
+    href: "/projects",
   },
 ];

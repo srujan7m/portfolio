@@ -23,25 +23,29 @@ export const EXPERIENCES: Experience[] = [
     current: true,
     positions: [
       {
-        title: "Full Stack Developer",
+        title: "Full-stack Developer (AI Integration Specialist)",
         type: "Self-employed",
         period: {
           start: "08.2024",
         },
-        description: `• Developed full-stack web applications using modern technologies
-• Built event management platform with AI integration and payment processing
-• Created startup idea evaluation tool with multiple AI provider support
-• Implemented file management systems with cloud storage integration
-• Active contributor to open-source projects on GitHub`,
+        description: `• Architected 7 production-grade web apps that pair modern UX with AI-first workflows (Gemini, OpenAI, Ollama)
+      • Reduced manual support for campus events by ~70% via a RAG chatbot + Telegram automation layered on top of my Next.js/Mapbox frontend
+      • Built civic dashboards with real-time WebSocket alerts, trust analytics, and WhatsApp digests; implemented Razorpay HMAC flows for ticketing
+      • Lead frontend + integration efforts during hackathons, handling Next.js, Prisma/PostgreSQL, Mapbox indoor mapping, and Vercel/Docker deployments
+      • Documented complex integrations (Mapbox indoor maps, WhatsApp notifications, Clerk + AES encryption) so teams can extend features quickly`,
         skills: [
-          "React",
           "Next.js",
           "TypeScript",
+          "React",
           "Node.js",
-          "MongoDB",
           "PostgreSQL",
+          "MongoDB",
           "Firebase",
-          "AI Integration",
+          "Prisma",
+          "Gemini AI",
+          "OpenAI",
+          "Razorpay",
+          "WebSocket",
         ],
       },
     ],
@@ -55,15 +59,17 @@ export const EXPERIENCES: Experience[] = [
         type: "Learning & Building",
         period: {
           start: "06.2021",
-          end: "12.2022",
+          end: "08.2024",
         },
-        description: `• Built responsive web applications
-• Optimized performance
-• Worked in Agile environment`,
+        description: `• Completed 100xDevs cohort labs, shipping progressively complex apps from vanilla JS to full-stack Next.js
+• Learned system design basics, state management, REST APIs, authentication, and accessibility best practices
+• Documented experiments, retros, and lessons learned to track growth`,
         skills: [
           "React",
           "JavaScript",
           "CSS",
+          "Git",
+          "REST APIs",
         ],
       },
     ],

@@ -49,16 +49,23 @@ export const FadeInStagger = ({
   children,
   staggerDelay = 0.1,
   className = '',
+  trigger = 'viewport',
+  viewportAmount = 0.2,
 }: {
   children: ReactNode;
   staggerDelay?: number;
   className?: string;
+  trigger?: 'viewport' | 'immediate';
+  viewportAmount?: number;
 }) => {
+  const animationProps =
+    trigger === 'immediate'
+      ? { initial: 'hidden', animate: 'visible' }
+      : { initial: 'hidden', whileInView: 'visible', viewport: { once: true, amount: viewportAmount } };
+
   return (
     <motion.div
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true, amount: 0.2 }}
+      {...animationProps}
       variants={{
         hidden: {},
         visible: {

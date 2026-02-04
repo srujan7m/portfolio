@@ -1,24 +1,29 @@
+"use client";
+
 import Image from "next/image";
 import { USER } from "@/features/profile/data/user";
+import { SOCIAL_LINKS } from "@/features/profile/data/social-links";
+import { GlassDock } from "@/components/ui/glass-dock";
 
 export function ProfileHeader() {
   return (
-    <div className="flex items-center gap-5 border-x border-edge p-6 transition-all duration-300 animate-fade-in">
-      <div className="group relative h-24 w-24 shrink-0 overflow-hidden rounded-full border-2 border-border transition-all duration-300 hover:border-blue-500/50 hover:scale-105 hover:shadow-xl hover:shadow-blue-500/20">
-        <Image
-          src={USER.avatar}
-          alt={USER.displayName}
-          fill
-          className="object-cover transition-transform duration-300 group-hover:scale-110 group-hover:rotate-2"
-          priority
-        />
-        <div className="absolute inset-0 rounded-full bg-gradient-to-br from-blue-500/20 to-purple-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+    <section className="border-x border-edge bg-linear-to-br from-background via-background/95 to-background p-6 transition-colors duration-300">
+      <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
+        <div className="flex items-center justify-center">
+          <Image
+            src="/images/portfolio-logo.jpeg"
+            alt="Portfolio logo"
+            width={160}
+            height={120}
+            className="rounded-2xl border border-border/70 bg-background/60 p-3 shadow-[0_15px_45px_rgba(0,0,0,0.2)]"
+          />
+        </div>
+        <div className="flex-1 min-w-0 space-y-3 text-center md:text-left">
+          <h1 className="text-2xl font-semibold tracking-tight text-foreground">{USER.displayName}</h1>
+          <p className="text-sm leading-relaxed text-muted-foreground">{USER.bio}</p>
+        </div>
+        <GlassDock items={SOCIAL_LINKS} showLabels={false} className="justify-start md:justify-end" />
       </div>
-
-      <div className="flex-1 min-w-0 animate-slide-in-left">
-        <h1 className="text-2xl font-bold truncate mb-1 tracking-tight gradient-text">{USER.displayName}</h1>
-        <p className="text-muted-foreground text-sm leading-relaxed">{USER.bio}</p>
-      </div>
-    </div>
+    </section>
   );
 }

@@ -164,6 +164,7 @@ export default function CursorFollower() {
         cancelAnimationFrame(animationFrameId.current);
       }
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [followerPos, mousePos, frameCount, idleTime, idleAnimation, idleAnimationFrame]);
 
   return (
