@@ -15,6 +15,32 @@ export type Project = {
 
 export const PROJECTS: Project[] = [
   {
+    id: "classcode",
+    title: "ClassCode",
+    period: {
+      start: "09.2024",
+    },
+    link: "https://classcode-self.vercel.app/",
+    description: `**Vision.** Discord + Slack + encrypted code sharing for dev classrooms.
+
+  **Features.** macOS-style code windows with syntax highlighting for 6+ languages, Discord-like folders, Cmd/K global search, manual/email-domain approvals, and real-time edits over WebSocket with diff-match-patch history.
+
+**Security.** Messages are compressed with zlib, encrypted via AES-256-GCM before hitting PostgreSQL, and permissions enforced via Clerk + Prisma policies.
+
+**Ownership.** Solo build—from product brief to deployment—covering the full Next.js stack, encryption layer, and polish.`,
+    skills: [
+      "Next.js",
+      "TypeScript",
+      "PostgreSQL",
+      "Prisma",
+      "AES-256-GCM",
+      "WebSocket",
+      "Clerk",
+      "Tailwind CSS",
+    ],
+    myRole: "Solo build",
+  },
+  {
     id: "campus-flow",
     title: "Campus Flow",
     period: {
@@ -83,32 +109,6 @@ export const PROJECTS: Project[] = [
     ],
     isCollaborative: true,
     myRole: "Frontend + DevOps",
-  },
-  {
-    id: "classcode",
-    title: "ClassCode",
-    period: {
-      start: "09.2024",
-    },
-    link: "https://github.com/srujan7m/classcode",
-    description: `**Vision.** Discord + Slack + encrypted code sharing for dev classrooms.
-
-  **Features.** macOS-style code windows with syntax highlighting for 6+ languages, Discord-like folders, Cmd/K global search, manual/email-domain approvals, and real-time edits over WebSocket with diff-match-patch history.
-
-**Security.** Messages are compressed with zlib, encrypted via AES-256-GCM before hitting PostgreSQL, and permissions enforced via Clerk + Prisma policies.
-
-**Ownership.** Solo build—from product brief to deployment—covering the full Next.js stack, encryption layer, and polish.`,
-    skills: [
-      "Next.js",
-      "TypeScript",
-      "PostgreSQL",
-      "Prisma",
-      "AES-256-GCM",
-      "WebSocket",
-      "Clerk",
-      "Tailwind CSS",
-    ],
-    myRole: "Solo build",
   },
   {
     id: "idea-evaluator",
