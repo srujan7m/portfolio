@@ -23,16 +23,16 @@ export const EXPERIENCES: Experience[] = [
     current: true,
     positions: [
       {
-        title: "Full-stack Developer (AI Integration Specialist)",
-        type: "Self-employed",
+        title: "Full-stack Developer",
+        type: "Independent",
         period: {
           start: "08.2024",
         },
-        description: `• Architected 7 production-grade web apps that pair modern UX with AI-first workflows (Gemini, OpenAI, Ollama)
-      • Reduced manual support for campus events by ~70% via a RAG chatbot + Telegram automation layered on top of my Next.js/Mapbox frontend
-      • Built civic dashboards with real-time WebSocket alerts, trust analytics, and WhatsApp digests; implemented Razorpay HMAC flows for ticketing
-      • Lead frontend + integration efforts during hackathons, handling Next.js, Prisma/PostgreSQL, Mapbox indoor mapping, and Vercel/Docker deployments
-      • Documented complex integrations (Mapbox indoor maps, WhatsApp notifications, Clerk + AES encryption) so teams can extend features quickly`,
+        description: `• Developed 7 production-grade web applications integrating modern UI/UX with AI-driven workflows (Gemini, OpenAI, Ollama)
+      • Reduced manual support workload for campus events by ~70% using a RAG-based chatbot integrated with Telegram automation and a Next.js + Mapbox frontend
+      • Built civic dashboards featuring real-time WebSocket alerts, trust analytics, and WhatsApp summaries; implemented secure Razorpay payment flows (HMAC)
+      • Led frontend architecture and system integrations in hackathons, working with Next.js, Prisma/PostgreSQL, Mapbox indoor mapping, and Vercel/Docker deployments
+      • Documented complex integrations (Mapbox, WhatsApp APIs, Clerk authentication, AES encryption) to improve scalability and team collaboration`,
         skills: [
           "Next.js",
           "TypeScript",
@@ -45,31 +45,7 @@ export const EXPERIENCES: Experience[] = [
           "Gemini AI",
           "OpenAI",
           "Razorpay",
-          "WebSocket",
-        ],
-      },
-    ],
-  },
-  {
-    id: "projects",
-    company: "Personal Projects",
-    positions: [
-      {
-        title: "Developer",
-        type: "Learning & Building",
-        period: {
-          start: "06.2021",
-          end: "08.2024",
-        },
-        description: `• Completed 100xDevs cohort labs, shipping progressively complex apps from vanilla JS to full-stack Next.js
-• Learned system design basics, state management, REST APIs, authentication, and accessibility best practices
-• Documented experiments, retros, and lessons learned to track growth`,
-        skills: [
-          "React",
-          "JavaScript",
-          "CSS",
-          "Git",
-          "REST APIs",
+          "WebSockets",
         ],
       },
     ],

@@ -2,14 +2,17 @@ export const USER = {
   username: "Srujan Mattur",
   displayName: "Srujan Mattur",
   bio: "Next.js engineer crafting AI-first products",
-  about: `Full-stack developer focused on React/Next.js platforms with AI woven into the user experience. My north star is earning a product engineering role where I can ship fast, learn relentlessly, and keep solving real problems.
+  about: `Full-stack developer specializing in React and Next.js, with a strong focus on integrating AI into real-world user experiences. I aim to build fast, scalable products while continuously learning and solving meaningful problems.
+
+I approach every project with a product mindset-prioritizing usability, performance, and clear storytelling.
 
 Recent highlights:
-• Owned the entire frontend + integrations for multiple hackathon wins (CampFlow, CitySense, ZentraAi) while teammates handled core AI models
-• Built production-ready systems that blend payments, mapping, realtime messaging, and AI copilots across civic, edtech, and collaboration tools
-• Treat every build like a product: story-driven case studies, clean UI polish, analytics hooks, and clear CTAs for recruiters or collaborators
+• Led frontend and integrations for multiple hackathon-winning projects (CampFlow, CitySense, ZentraAi), collaborating with teams focused on AI model development
+• Built production-ready systems combining payments, mapping, real-time communication, and AI copilots across civic, edtech, and collaboration domains
+• Designed projects as complete products with polished UI, analytics integration, and clear user journeys
 
-Current focus: multimodal AI UX, cost-optimized inference pipelines, and crafting memorable micro-interactions that make recruiters remember the portfolio.`,
+Current focus:
+Multimodal AI experiences, cost-efficient inference pipelines, and creating impactful micro-interactions that enhance user engagement.`,
   
   // Contact info
   email: "srujanmmattur@gmail.com",
@@ -26,7 +29,7 @@ Current focus: multimodal AI UX, cost-optimized inference pipelines, and craftin
   dateCreated: "2024-08-05",
   
   // Professional
-  currentRole: "Full-stack Developer (AI Integration)",
+  currentRole: "Full-stack Developer",
   currentCompany: "Independent",
   
   keywords: [
