@@ -20,7 +20,7 @@ export const PROJECTS: Project[] = [
     period: {
       start: "09.2024",
     },
-    link: "https://classcode-self.vercel.app/",
+    link: "https://classcode-steel.vercel.app/",
     description: `**Vision.** Discord + Slack + encrypted code sharing for dev classrooms.
 
   **Features.** macOS-style code windows with syntax highlighting for 6+ languages, Discord-like folders, Cmd/K global search, manual/email-domain approvals, and real-time edits over WebSocket with diff-match-patch history.
